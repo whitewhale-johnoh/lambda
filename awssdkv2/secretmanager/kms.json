@@ -1,0 +1,36 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "kms:GetPublicKey",
+                "kms:Decrypt",
+                "kms:ListKeyPolicies",
+                "kms:ListRetirableGrants",
+                "kms:GetKeyPolicy",
+                "kms:Verify",
+                "kms:ListResourceTags",
+                "kms:GenerateDataKeyPair",
+                "kms:ListGrants",
+                "kms:GetParametersForImport",
+                "kms:Encrypt",
+                "kms:GetKeyRotationStatus",
+                "kms:GenerateDataKey",
+                "kms:DescribeKey"
+            ],
+            "Resource": "arn:aws:kms:ap-northeast-2:708595888134:key/mrk-19b26c379ccb449b980f0c32f4461779"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "kms:DescribeCustomKeyStores",
+                "kms:ListKeys",
+                "kms:ListAliases"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
